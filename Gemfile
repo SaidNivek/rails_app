@@ -27,8 +27,8 @@ gem "jbuilder"
 # For authentication and user tracking
 gem "devise"
 
-  # Use sqlite3 as the database for Active Record
-  gem "pg"
+# Use sqlite3 as the database for Active Record
+gem "pg"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
