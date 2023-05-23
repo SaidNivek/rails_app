@@ -1,27 +1,35 @@
-<div class="jumbotron jumbotron-home">
-    <div class="container">
-        <h1>Wlecome to my website!</h1>
-        <p>This is a template for a simple marketing or info website.</p>
-        <%= link_to "Learn more >>", "#", class: "btn btn-primary btn-lg" %>
+<% if user_signed_in? %>
+        <div class="jumbotron jumbotron-home">
+        <div class="container">                
+                <h1>Welcome back!</h1>
+        </div>
+    </div> 
+<% else %>
+    <div class="jumbotron jumbotron-home">
+        <div class="container">                
+                <h1>Welcome to my website!</h1>
+                <p>This is a template for a simple marketing or info website.</p>
+                <%= link_to "Learn more >>", "#", class: "btn btn-primary btn-lg" %>
+        </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque. Rhoncus mattis rhoncus urna neque viverra justo nec.</p>
-            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque. Rhoncus mattis rhoncus urna neque viverra justo nec.</p>
-            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque. Rhoncus mattis rhoncus urna neque viverra justo nec.</p>
-            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque. Rhoncus mattis rhoncus urna neque viverra justo nec.</p>
+                <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque. Rhoncus mattis rhoncus urna neque viverra justo nec.</p>
+                <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque. Rhoncus mattis rhoncus urna neque viverra justo nec.</p>
+                <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+            </div>
         </div>
     </div>
-</div>
+<% end %>
